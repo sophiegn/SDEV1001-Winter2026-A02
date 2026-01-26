@@ -11,21 +11,16 @@ print(F"You have selected Package {package}")
 
 match package:
     case "A":
-        time = 4
-        fee = 40
+        time, fee = 4, 40
     case "B":
-        time = 8
-        fee = 55
+        time, fee = 8, 55
     case "C":
-        time = 12
-        fee = 75
+        time, fee = 12, 75
     case "D":
-        time = 12
-        fee = 100
+        time, fee = 12, 100
     case _:
         print("Invalid input")
-        fee = 0
-        time = 0
+        fee, time = 0, 0
 
 print(f"Your monthly fee is ${fee}")
 print(f"Your total fee is ${fee*time}")
