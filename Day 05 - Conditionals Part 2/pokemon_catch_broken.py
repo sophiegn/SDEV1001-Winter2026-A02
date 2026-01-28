@@ -11,31 +11,31 @@ import random
 
 CHARIZARD_CATCH_CHANCE = 95
 POKE_BALL_BONUS = 10
-GREAT_BALL_BONUS == 30
+GREAT_BALL_BONUS = 30
 ULTRA_BALL_BONUS = 50
 MASTER_BALL_BONUS = 100
 
 print("You encountered a wild Charizard!")
 
-ball_choice = print("""
+ball_choice = int(input("""
     Which ball would you like to throw (enter the number):
     1: Poke Ball
     2: Great Ball
     3: Ultra Ball
     4: Master Ball
-""")
+"""))
 
-roll = random.randoint(1, 100)
+roll = random.randint(1, 100)
 
 if ball_choice == 1:
      print("Throwing Poke Ball...")
-    roll += POKE_BALL_BONUS
+     roll += POKE_BALL_BONUS
 elif ball_choice == 2:
     print("Throwing Great Ball...")
     roll += GREAT_BALL_BONUS
 elif ball_choice == 3:
     print("Throwing Ultra Ball...")
-    roll -= ULTRA_BALL_BONUS
+    roll += ULTRA_BALL_BONUS
 else:
     print("Throwing Master Ball...")
     roll += MASTER_BALL_BONUS
