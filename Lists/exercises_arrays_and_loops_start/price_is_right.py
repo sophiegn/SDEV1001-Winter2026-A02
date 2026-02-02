@@ -7,7 +7,7 @@ guess = input("Guess the price of the item: ")
 
 if guess != price:
     print("You lose!")
-    print("The price was:")
+    print("The price was: ")
     print(price)
 elif guess == price:
     print("You win!")
